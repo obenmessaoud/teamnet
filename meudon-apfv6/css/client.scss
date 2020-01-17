@@ -1,73 +1,85 @@
-
 // Variables
-:root
-{
-/* site */
-    --site_largeur :100%;
-    --site_couleur_fond : #FFFFFF;
-	
-/* toutes les pages */
-    --page_largeur : 70%;
-    --page_couleur_fond : #F9FBAC;
-    --page_fonte_nom: Roboto;
-    --page_fonte_serif: sans-serif;
-    --page_fonte_taille : 1.25em; 
-    --bloc_gauche_largeur : 10em;
-    --bloc_central_largeur : 40em;
-    --bloc_droit_largeur : 10em;
-    
-/* bandeau */
-    --bandeau_couleur_fond : grey;
-    --bandeau_largeur : 100%;
-    --bandeau_hauteur : 4em;  
-    --bandeau_bouton_couleur_survol : white;
-    --bandeau_taille_police : 1.6em;    
+:root {
+  /* site */
+  --background_image1: url(https://cdn.radiofrance.fr/s3/cruiser-production/2019/02/b5dffc00-b010-4f80-8878-9960e3a8ab12/870x489_dz62k6qwkaa5tkj.jpg);
+  --background_image2: url(https://upload.wikimedia.org/wikipedia/commons/2/2b/Aulnay-sous-Bois_town_hall_4.JPG);
 
-/* boutons */
-    --boutons_fond_couleur : grey;
-    --boutons_police_couleur : rgb(0, 0, 0);    
+  /* toutes les pages */
+  --site_largeur: 100%;
+  --site_couleur_fond: '';
+  --page_largeur: 80%;
+  --page_couleur_fond: #ffffff59;
+  --page_fonte_nom: Roboto;
+  --page_fonte_serif: sans-serif;
+  --page_fonte_taille: 1.25em;
+  --bloc_haut_largeur: 70%;
+  --bloc_gauche_largeur: auto;
+  --bloc_central_largeur: 80em;
+  --bloc_droit_largeur: auto;
+  /* bandeau */
+  --bandeau_couleur_fond: #951981;
+  --bandeau_couleur_fond_transparence: #951981c9;
+  --bandeau_largeur: 100%;
+  --bandeau_hauteur: 2em;
+  --bandeau_bouton_couleur_survol: white;
+  --bandeau_taille_police: 1.6em;
+  --bandeau_text_color: white;
+  --bandeau_color_icons: white;
 
-/* page liste des thèmes */ 
-    --themes_bloc_largeur : 40em;
-    --themes_bloc_marge : 3rem;
-    --themes_fond_couleur : grey;
-    --themes_police_couleur : rgb(255, 148, 212);
-    --themes_police_couleur_survol : rgb(0, 0, 0);
-    --soustheme_bloc_hauteur : 3em;
-    --soustheme_bloc_marge_dessous : 1.4em;
-    --soustheme_bordure_couleur_survol : rgb(255, 148, 212);
-    --soustheme_fond_couleur : rgb(125, 125, 125);
-    --soustheme_fond_couleur_survol : rgb(0, 0, 0);
-/* thèmes menu*/
-    --themes_menu_marge_dessous : 3em;
-    --themes_menu_direction : row; 
-    --themes_menu_fond_couleur : black;
-    --themes_menu_fond_couleur_select : braun;
-    --themes_menu_item_alignement : center;
-    --themes_menu_police_taille : 1.6em;
-    --themes_menu_police_couleur : white; 
+  /* boutons */
 
-/* page login */
-    --login_bloc_largeur :  40em;   
-    --login_titre_fond_couleur : rgb(146, 146, 146);
-    --login_titre_texte_couleur : rgb(255, 148, 212);
-    --login_bordure_couleur : rgb(255, 148, 212);
-	
-/* page formulaires */
-    --bloc_fond_couleur : #EFEFEF;
-    --bloc_titre_fond_couleur : white;   
+  --boutons_fond_couleur: #951981;
+  --boutons_police_couleur: white;
+  --boutons_selected_fond_couleur: rgb(12, 195, 25);
+  --boutons_selected_police_couleur: rgb(255, 255, 255);
 
-/* messages et alertes */    
-    --modale_texte_couleur : black;
-    --modale_texte_taille : 2.5em;
-    --modale_bouton_fond_couleur : #333030;
-    --modale_bouton_texte_couleur : #fff;
-    --modale_bouton_texte_taille : 1em;
+  /* page liste des thÃ©mes */
+  --themes_bloc_largeur: 40em;
+  --themes_bloc_marge: 2rem;
+  --themes_fond_couleur: #ffffff00;
+  --themes_police_couleur: black;
+  --themes_police_couleur_survol: rgb(0, 0, 0);
+  --soustheme_bloc_hauteur: 3em;
+  --soustheme_bloc_marge_dessous: 1.4em;
+  --soustheme_bordure_couleur_survol: black;
+  --soustheme_fond_couleur: yellow;
+  --soustheme_fond_couleur_survol: rgb(0, 0, 0);
 
-/* validation des champs */    
-    --syntax_error_fond_couleur : rgb(255, 148, 212); 
-    --syntax_ok_fond_couleur : white; 
-   
-/* footer */   
-	--footer_image_taille : 12.5em;
+  /* thÃ©mes menu*/
+  --themes_menu_marge_dessous: 3em;
+  --themes_menu_direction: row;
+  --themes_menu_fond_couleur: #951981;
+  --color_text_menu: white;
+  --themes_menu_fond_couleur_select: #ededed;
+  --color_text_menu_selected: #951981;
+  --themes_menu_item_alignement: center;
+  --themes_menu_police_taille: 20px;
+  --themes_menu_police_couleur: black;
+
+  /* page login */
+  --login_bloc_largeur: 40em;
+  --login_titre_fond_couleur: #951981;
+  --login_titre_texte_couleur: white;
+  --login_bordure_couleur: #951981;
+
+  /* page formulaires */
+  --bloc_fond_couleur: #f4f4f4bd;
+  --bloc_titre_fond_couleur: #9519816b;
+
+  /* messages et alertes */
+  --modale_texte_couleur: black;
+  --modale_texte_taille: 2.5em;
+  --modale_bouton_fond_couleur: rgba(51, 48, 48, 1);
+  --modale_bouton_texte_couleur: rgba(255, 255, 255, 1);
+  --modale_bouton_texte_taille: 1em;
+
+  /* validation des champs */
+  --syntax_error_fond_couleur: rgb(255, 148, 212);
+  --syntax_ok_fond_couleur: white;
+
+  /* footer */
+  --footer_image_taille: 12.5em;
+  --footer-fond-color: white;
+  --footer-image-url: url(https://aulnayssbois.portail-familles.com/aulnayssbois/images/local/site/teamnet/CSS_collectivites/famille-logo-violet.jpg);
+  --agenda-color: '#ff0063';
 }
